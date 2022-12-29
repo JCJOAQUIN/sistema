@@ -1,0 +1,34 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateUserReviewTicketTable extends Migration
+{
+	/**
+	 * Run the migrations.
+	 *
+	 * @return void
+	 */
+	public function up()
+	{
+		Schema::create('user_review_ticket', function (Blueprint $table)
+		{
+			$table->integer('user_id')->unsigned();
+			$table->integer('section_tickets_idsectionTickets')->unsigned();
+			$table->foreign('user_id')->references('id')->on('users');
+			$table->foreign('section_tickets_idsectionTickets')->references('idsectionTickets')->on('section_tickets');
+		});
+	}
+
+	/**
+	 * Reverse the migrations.
+	 *
+	 * @return void
+	 */
+	public function down()
+	{
+		Schema::dropIfExists('user_review_ticket');
+	}
+}

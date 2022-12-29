@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'icomoon';
+
+  src:  url(/fonts/icomoon.eot?a3181ae4fba6b04271d43cb57b1b168b);
+
+  src:  url(/fonts/icomoon.eot?a3181ae4fba6b04271d43cb57b1b168b#iefix) format('embedded-opentype'),
+		url(/fonts/icomoon.ttf?78e03854405fcb830132a46d6685cd03) format('truetype'),
+		url(/fonts/icomoon.woff?4c3415b9c3fd4419230376c974c5c32f) format('woff'),
+		url(/fonts/icomoon.svg?2290bae3dc4e161a1f02891489e2a080#icomoon) format('svg');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face
+{
+	font-family	: 'Baskerville';
+	src			: url('../fonts/BaskervilleBQ-Regular.eot?#iefix') format('embedded-opentype'),
+				url('../fonts/BaskervilleBQ-Regular.woff') format('woff'),
+				url('../fonts/BaskervilleBQ-Regular.ttf')  format('truetype'),
+				url('../fonts/BaskervilleBQ-Regular.svg#BaskervilleBQ-Regular') format('svg');
+	font-weight	: normal;
+	font-style	: normal;
+}
+
+@font-face
+{
+	font-family	: 'Seravek';
+	src			: url('Seravek.eot?#iefix') format('embedded-opentype'),
+				url('../fonts/Seravek.woff') format('woff'),
+				url('../fonts/Seravek.ttf')  format('truetype'),
+				url('../fonts/Seravek.svg#Seravek') format('svg');
+	font-weight	: normal;
+	font-style	: normal;
+}
+
+[class^="icon-"], [class*=" icon-"]
+{
+  -moz-osx-font-smoothing	: grayscale;
+  -webkit-font-smoothing	: antialiased;
+  font-family				: 'icomoon' !important;
+  font-style				: normal;
+  font-variant			: normal;
+  font-weight				: normal;
+  line-height				: 1;
+  speak					: none;
+  text-transform			: none;
+}
+
+.icon-xml:before
+{
+  content: "\E904";
+}
+
+.icon-stamp:before
+{
+  content: "\E903";
+}
+
+.icon-home:before
+{
+  content: "\E900";
+}
+
+.icon-x:before
+{
+  content: "\E901";
+}
+
+.icon-microsoftexcel:before
+{
+  content: "\E902";
+}
+
+.icon-pencil:before
+{
+  content: "\E906";
+}
+
+.icon-ticket:before
+{
+  content: "\E939";
+}
+
+.icon-clock:before
+{
+  content: "\E950";
+}
+
+.icon-admin:before
+{
+  content: "\E953";
+}
+
+.icon-user:before
+{
+  content: "\E971";
+}
+
+.icon-user-plus:before
+{
+  content: "\E973";
+}
+
+.icon-user-minus:before
+{
+  content: "\E974";
+}
+
+.icon-user-check:before
+{
+  content: "\E975";
+}
+
+.icon-redo:before
+{
+  content: "\E984";
+}
+
+.icon-search:before
+{
+  content: "\E986";
+}
+
+.icon-gear:before
+{
+  content: "\E994";
+}
+
+.icon-stats:before
+{
+  content: "\E99B";
+}
+
+.icon-bin:before
+{
+  content: "\E9AD";
+}
+
+.icon-menu:before
+{
+  content: "\E9BD";
+}
+
+.icon-plus:before
+{
+  content: "\EA0A";
+}
+
+.icon-cancel-circle:before
+{
+  content: "\EA0D";
+}
+
+.icon-blocked:before
+{
+  content: "\EA0E";
+}
+
+.icon-cross:before
+{
+  content: "\EA0F";
+}
+
+.icon-checkmark:before
+{
+  content: "\EA10";
+}
+
+.icon-checkmark2:before
+{
+  content: "\EA11";
+}
+
+.icon-exit:before
+{
+  content: "\EA14";
+}
+
+.icon-arrow-up:before
+{
+  content: "\EA32";
+}
+
+.icon-arrow-down:before
+{
+  content: "\EA36";
+}
+
+.icon-left-arrow:before
+{
+  content: "\EA42";
+}
+
+.icon-pdf:before
+{
+  content: "\EADF";
+}
+
+.icon-file-excel:before
+{
+  content: "\EAE2";
+}
+
+.icon-bullhorn:before
+{
+  content: "\E91A";
+}

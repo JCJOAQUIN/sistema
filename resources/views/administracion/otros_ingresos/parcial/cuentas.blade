@@ -1,0 +1,49 @@
+@if(count($banksAccounts))
+	<br>
+	<div class="resultbank table-responsive">
+		<br>
+		<center>
+			<strong>Seleccione una cuenta</strong>
+		</center>
+		<div class='divisor'>
+			<div class='gray-divisor'></div>
+			<div class='orange-divisor'></div>
+			<div class='gray-divisor'></div>
+		</div><br> 
+		<table id='table2' class='table-no-bordered'>
+			<thead class='table-no-background'>
+				<tr>
+					<th>Banco</th>
+					<th>Alias</th>
+					<th>Cuenta</th>
+					<th>Sucursal</th>
+					<th>Referencia</th>
+					<th>CLABE</th>
+					<th>Moneda</th>
+					<th>Convenio</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody class='request-validate' id='banks-body'>
+				@foreach($banksAccounts as $bank)
+					<tr>
+						<td>{{ $bank->bank->description }}</td>
+						<td>{{ $bank->alias!=null ? $bank->alias : '-----' }}</td>
+						<td>{{ $bank->account!=null ? $bank->account : '-----' }}</td>
+						<td>{{ $bank->branch!=null ? $bank->branch : '-----' }}</td>
+						<td>{{ $bank->reference!=null ? $bank->reference : '-----' }}</td>
+						<td>{{ $bank->clabe!=null ? $bank->clabe : '-----' }}</td>
+						<td>{{ $bank->currency!=null ? $bank->currency : '-----' }}</td>
+						<td>{{ $bank->agreement!=null ? $bank->agreement : '-----' }}</td>
+						<td><input id='idBA{{ $bank->idbanksAccounts }}' type='radio' name='idbanksAccounts' class='checkbox' value="{{ $bank->idbanksAccounts }}">
+						<label class='check-small request-validate' for='idBA{{ $bank->idbanksAccounts }}'><span class="icon-checkmark"></span></label>
+						</td>
+					</tr>
+				@endforeach
+			</tbody>
+		</table>
+	</div>
+	<br>
+@else
+	<div id="not-found" style="display:block;">NO HAY CUENTAS REGISTRADAS</div>
+@endif

@@ -1,0 +1,36 @@
+{
+	"private": true,
+	"scripts": {
+		"development": "mix",
+		"dev": "npm run development",
+		"watch": "mix watch",
+		"watch-poll": "mix watch -- --watch-options-poll=1000",
+		"hot": "mix watch --hot",
+		"production": "mix --production"
+	},
+	"devDependencies": {
+		"axios": "^0.21.1",
+		"bootstrap": "^4.6.0",
+		"cross-env": "^5.1",
+		"jquery": "^3.2",
+		"laravel-mix": "^6.0.25",
+		"lodash": "^4.17.4",
+		"popper.js": "^1.16.1",
+		"postcss-import": "^14.1.0",
+		"vue": "^2.5.7"
+	},
+	"dependencies": {
+		"@fullcalendar/core": "^5.9.0",
+		"@fullcalendar/daygrid": "^5.9.0",
+		"@fullcalendar/interaction": "^5.9.0",
+		"@fullcalendar/list": "^5.9.0",
+		"@fullcalendar/timegrid": "^5.9.0",
+		"fullcalendar": "^5.9.0",
+		"jstree": "^3.3.12",
+		"moment": "^2.29.1",
+		"randomcolor": "^0.6.2",
+		"string-to-color": "^2.2.2",
+		"tailwindcss": "^2.2.4",
+		"tailwindcss-children": "^2.1.0"
+	}
+}

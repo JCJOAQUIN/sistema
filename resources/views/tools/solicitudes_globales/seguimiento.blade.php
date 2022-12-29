@@ -1,0 +1,81 @@
+@php
+    $request->status = 1;
+    $requests->status = 1;
+    $globalRequests = true;
+@endphp
+@switch($request->kind)
+    @case(1)
+            @include('administracion.compra.seguimiento')
+        @break
+    @case(2)
+            @include('administracion.complementonomina.seguimiento')
+        @break
+    @case(3)
+            @include('administracion.gastos.seguimiento')
+        @break
+    @case(4)
+            @include('administracion.personal.seguimiento')
+        @break
+    @case(5)
+            @include('administracion.prestamo.seguimiento')
+        @break
+    @case(6)
+            @include('administracion.computo.seguimiento')
+        @break
+    @case(7)
+            @include('administracion.papeleria.alta')
+        @break
+    @case(8)
+            @include('administracion.recurso.seguimiento')
+        @break
+    @case(9)
+            @include('administracion.reembolso.seguimiento')
+        @break
+    @case(10)
+            @include('administracion.ingresos.seguimiento')
+        @break
+    @case(11)
+            @include('administracion.movimientos_entre_cuentas.seguimiento-ajuste')
+        @break
+    @case(12)
+            @include('administracion.movimientos_entre_cuentas.seguimiento-prestamo')
+        @break
+    @case(13)
+            @include('administracion.movimientos_entre_cuentas.seguimiento-compra')
+        @break
+    @case(14)
+            @include('administracion.movimientos_entre_cuentas.seguimiento-grupos')
+        @break
+    @case(15)
+            @include('administracion.movimientos_entre_cuentas.seguimiento-movimientos')
+        @break
+    @case(16)
+            @php
+                $status = App\RequestModel::selectRaw('status')->find($request->folio);
+                $request->status = $status->status;
+            @endphp
+            @include('administracion.nomina.alta-nomina')
+        @break
+    @case(17)
+            @include('administracion.registro_compra.seguimiento')
+        @break
+    @case(18)
+            @include('administracion.gasto_financiero.alta')
+        @break
+    @case(19)
+            @include('administracion.requisicion.alta_material')
+        @break
+    @case(20)
+            @include('administracion.otros_ingresos.alta')
+        @break
+    @case(21)
+            @include('errors.404')
+        @break
+    @case(22)
+            @include('administracion.orden_trabajo.alta')
+        @break
+    @case(23)
+            @include('administracion.vuelos_hoteles.alta')
+        @break
+    @default 
+@endswitch

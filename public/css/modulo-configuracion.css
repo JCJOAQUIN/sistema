@@ -1,0 +1,159 @@
+.title-config
+{
+	align-content	: center;
+	align-items		: center;
+	display			: flex;
+	flex-wrap		: wrap;
+	font-family		: 'Raleway', sans-serif;
+	font-size		: 30px;
+	font-style		: normal;
+	font-variant	: normal;
+	font-weight		: 500;
+	justify-content	: center;
+	padding-top		: 21px;
+	text-align		: center;
+	text-transform	: uppercase;
+}
+
+.container-blocks-all
+{
+	height	: 100%; 
+	width	: 100%;
+}
+
+.container-blocks
+{
+	align-content	: center;
+	align-items		: center;
+	background		: #FFFBF0;
+	display			: flex;
+	flex-wrap		: wrap;
+	justify-content	: center;
+	text-align		: center;
+	width			: 100%;	
+}
+
+.block
+{
+	background		: #FD991C;
+	border-radius	: 5px;
+	color			: white;
+	font			: 14px 'Raleway', sans-serif;
+	margin			: 20px;
+	max-width		: 150px;
+	padding			: 10px;
+	text-decoration	: none;
+	text-transform	: uppercase;
+	width			: 100%;
+}
+.block a
+{
+	color			: white;
+	text-decoration	: none;
+}
+.block a:hover
+{
+	color			: white;
+	text-decoration	: none;
+}
+
+.container-sub-blocks
+{
+	align-content	: flex-start;
+	align-items		: center;
+	display			: flex;
+	flex-wrap		: wrap;
+	justify-content	: flex-start;
+	text-align		: center;
+	width			: 100%;
+}
+
+.sub-block
+{
+	border			: 1px solid black;
+	border-radius	: 5px;
+	color			: black;
+	cursor			: pointer;
+	font			: 14px 'Raleway', sans-serif;
+	margin			: 20px;
+	max-width		: 150px;
+	padding			: 10px;
+	text-decoration	: none;
+	text-transform	: uppercase;
+	width			: 100%;
+}
+
+.sub-block:hover
+{
+	background		: #FD991C;
+	color			: white;
+	text-decoration	: none;
+}
+
+ .sub-block-active, .sub-block:hover a
+{
+	background		: #FD991C;
+	color			: white;
+	text-decoration	: none;
+}
+
+.sub-block a
+{
+	color			: black;
+	display			: block;
+	text-decoration	: none;
+	width			: 100%;
+}
+
+.form-container 
+{
+	align-content	: flex-start;
+	align-items		: flex-start;
+	display			: flex;
+	flex-direction 	: row;
+	flex-wrap		: wrap;
+	justify-content	: center;
+	width			: 100%;	
+} 
+.div-form-group
+{	
+	align-self 		: auto;
+	padding-left 	: 30px;
+	max-width 		: 300px;
+	width 			: 90%; 
+}
+
+.input-text
+{
+	border 			: 1px solid #B1B1B1;
+	border-radius 	: 3px;
+	display 		: block;
+	font 			: 16px 'Helvetica', sans-serif;
+	height 			: 30px;
+	max-width 		: 350px;  
+	width 			: 90%;
+}
+
+.btn-primary, .btn-secondary
+{
+	display 		: inline-block;
+    padding 		: 6px 12px;
+    font-size 		: 14px;
+    font-weight 	: 400;
+    text-align 		: center;
+    cursor 			: pointer;
+    background-image: none;
+    border 			: 1px solid transparent;
+    border-radius 	: 3px;
+}
+
+.btn-primary
+{
+	color 			: #fff;
+    background-color: #EE3E21;
+    border-color 	: #EE3E21;
+}
+.label-form
+{
+	font 			: 16px Helvetica, sans-serif;
+}

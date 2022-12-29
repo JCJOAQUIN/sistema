@@ -1,0 +1,1 @@
+<label class="pl-4 md:pl-0 pr-4 @isset($simple) text-left @else text-left sm:text-right @endisset @isset($classEx){!!$classEx!!}@endisset">{!! $slot !!}</label>
